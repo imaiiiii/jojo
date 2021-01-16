@@ -1,33 +1,35 @@
 
-*start
-*title
-;メッセージレイヤを非表示にしておく
-@layopt layer=message0 visible=false
 
-;背景画像を設定
-[image layer="base" page="fore" storage=back.jpg]
-[image layer=1 storage=title.png visible=true top=100 left=150]
+;メニューボタン非表示
+;[hidemenubutton]
 
-[locate x=200 y=300 ]
-[button graphic="start.png" target=*first]
 
-[locate x=200 y=360 ]
-[button graphic="load.png" target=*loadmenu]
+;ゲームに必要なライブラリ読み込み
+[call storage="system/tyrano.ks"]
+[call storage="system/builder.ks"]
+[call storage="system/chara_define.ks"]
+
+;live2D対応
+
+
+[layopt layer=2 visible=true]
+[layopt layer="message0" visible=false]
+[call storage="system/message_window.ks"]
+
+;プラグインの設定
+[call storage="system/plugin.ks"]
+[call storage="system/plugin_third.ks"]
+
+;タイトルの設定
+;[title name="now loading"]
+
+;タイトル画面表示
+[jump storage="title_screen.ks"]
+
+;--------------------------
 
 [s]
 
-;つづきからボタンが押された場合。ロード画面を表示
-*loadmenu
-[cm]
-[showload]
 
-[jump target=*title]
-[s]
 
-;ストーリー最初から
-*first
-[cm]
-[freeimage layer=1]
-メッセージレイヤを再度表示する
-@layopt layer=message0 visible=true
-ゲームが始まります[l][r]
+
