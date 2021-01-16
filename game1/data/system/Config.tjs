@@ -1,7 +1,7 @@
 //ティラノビルダーによる自動ビルド　
 ;global.config_version=4.50
-;System.title=ティラノスクリプト
-;projectID=tyranoproject
+;System.title=hayaa
+;projectID=hayaa
 ;game_version=0.0
 ;ScreenRatio=fix
 ;patch_apply_auto=true
@@ -31,8 +31,8 @@
 ;configSave=webstorage
 ;configThumbnail=true
 ;configThumbnailQuality=middle
-;configSaveSlotNum=5
-;maxBackLogNum=50
+;configSaveSlotNum=3
+;maxBackLogNum=0
 ;autoRecordLabel=false
 ;unReadTextSkip=false
 ;alreadyReadTextColor=0x87cefa
@@ -65,7 +65,7 @@
 ;defaultFontSize=24
 ;defaultLineSpacing=8
 ;defaultPitch=0
-;userFace=メイリオ,sans-serif
+;userFace=serif,'游明朝'
 ;defaultChColor=0xffffff
 ;defaultBold=false
 ;defaultRubySize=10
